@@ -1,0 +1,80 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+/* Gradient Animation */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+  animation: gradientMove 8s ease infinite;
+}
+
+/* Top moving bar */
+@keyframes slide {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.animate-slide {
+  animation: slide 4s linear infinite;
+}
+
+/* Shine effect on image */
+@keyframes shine {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.animate-shine {
+  animation: shine 3s infinite;
+}
+/* GLOBAL BACKGROUND */
+.global-bg {
+  background: linear-gradient(120deg, #0a0a0a, #1a0000, #2b0000, #000000);
+  background-size: 300% 300%;
+  animation: gradientMove 10s ease infinite;
+}
+
+/* Gradient animation */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+/* Gradient animation */
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+  animation: gradient 10s ease infinite;
+}
+
+/* Moving bar */
+@keyframes slide {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.animate-slide {
+  animation: slide 6s linear infinite;
+}
+
+/* Shine effect */
+@keyframes shine {
+  0% { transform: translateX(-100%) rotate(12deg); }
+  100% { transform: translateX(100%) rotate(12deg); }
+}
+
+.animate-shine {
+  animation: shine 3s linear infinite;
+}
