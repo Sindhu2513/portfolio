@@ -1,15 +1,14 @@
-# Use Java 17
-FROM eclipse-temurin:17-jdk
-
-# Copy project
-COPY . /app
+FROM openjdk:17
 
 WORKDIR /app
 
-RUN chmod +x ./mvnw
+COPY . .
 
-# Build project
+# ✅ Give permission to mvnw
+RUN chmod +x mvnw
+
+# ✅ Build project
 RUN ./mvnw clean install -DskipTests
 
-# Run app
+# ✅ Run app
 CMD ["java", "-jar", "target/*.jar"]
