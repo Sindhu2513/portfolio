@@ -34,7 +34,7 @@ function Navbar() {
 
       <h1 className="font-bold text-xl">Sindhu</h1>
 
-      <div className="flex gap-8 relative">
+      <div className="hidden md:flex gap-8">
         {links.map((link) => (
           <a
             key={link}

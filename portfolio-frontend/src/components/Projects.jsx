@@ -91,7 +91,7 @@ function Projects() {
       "Spring Boot Integration"
     ],
     live: "#",
-    code: "#"
+    code: "https://github.com/Sindhu2513/portfolio"
   },
   {
   title: "Upcoming AI-Based Projects",
