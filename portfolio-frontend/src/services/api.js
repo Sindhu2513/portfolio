@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Base URL of your backend
 const API = axios.create({
-  baseURL: "http://localhost:8080/api",
+  baseURL: "https://portfolio-4-3axu.onrender.com/api/contact",
 });
 
 // Function to send contact form data
