@@ -10,14 +10,7 @@ import java.util.List;
 @Service
 public class ProjectService {
 
-    @Autowired
-    private ProjectRepository repo;
-
-    public List<Project> getAllProjects() {
-        return repo.findAll();
-    }
-
-    public Project saveProject(Project project) {
-        return repo.save(project);
+    public List<String> getProjects() {
+        return List.of("Portfolio Website", "Stock Tracker", "Finance AI App");
     }
 }
