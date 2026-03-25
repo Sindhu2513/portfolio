@@ -10,23 +10,27 @@ function Contact() {
     message: ""
   });
 
-  const handleSubmit = async () => {
+  const handleSubmit = async (e) => {
+    e.preventDefault(); // ✅ prevent page reload
+
     try {
       await sendMessage(form);
       alert("Message sent ✅");
-      setForm({ name: "", email: "", message: "" });
+
+      setForm({
+        name: "",
+        email: "",
+        message: ""
+      });
+
     } catch (err) {
       console.log(err);
+      alert("Failed to send message ❌");
     }
   };
 
   return (
-    <section
-      id="contact"
-      className="py-20 px-10"
-    >
-
-      <section id="contact" className="py-20 px-10"></section>
+    <section id="contact" className="py-20 px-10">
 
       {/* 🔥 Heading */}
       <div className="text-center mb-12">
@@ -51,13 +55,15 @@ function Contact() {
 
           <h3 className="text-xl font-bold mb-4">Send a Message</h3>
 
-          <div className="flex flex-col gap-4">
+          {/* ✅ FORM ADDED */}
+          <form onSubmit={handleSubmit} className="flex flex-col gap-4">
 
             <input
               className="p-3 rounded bg-gray-800 focus:outline-none focus:ring-2 focus:ring-red-500"
               placeholder="Your Name"
               value={form.name}
               onChange={e => setForm({ ...form, name: e.target.value })}
+              required
             />
 
             <input
@@ -65,6 +71,7 @@ function Contact() {
               placeholder="Your Email"
               value={form.email}
               onChange={e => setForm({ ...form, email: e.target.value })}
+              required
             />
 
             <textarea
@@ -73,16 +80,18 @@ function Contact() {
               rows="4"
               value={form.message}
               onChange={e => setForm({ ...form, message: e.target.value })}
+              required
             />
 
             <button
-              onClick={handleSubmit}
+              type="submit"
               className="bg-red-500 py-3 rounded-lg hover:bg-red-600 hover:shadow-[0_0_20px_rgba(255,0,0,0.7)] transition"
             >
               Send Message
             </button>
 
-          </div>
+          </form>
+
         </motion.div>
 
         {/* RIGHT → CONTACT INFO */}
@@ -93,7 +102,6 @@ function Contact() {
           className="flex flex-col gap-6"
         >
 
-          {/* Sliding Cards */}
           <div className="space-y-4">
 
             <div className="p-4 border border-gray-700 rounded-xl bg-black/40 hover:translate-x-2 transition">
@@ -117,7 +125,6 @@ function Contact() {
 
           </div>
 
-          {/* Social Icons */}
           <div>
             <h3 className="text-lg font-semibold mb-3">Social Presence</h3>
 
