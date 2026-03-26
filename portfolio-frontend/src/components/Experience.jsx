@@ -49,7 +49,7 @@ function Experience() {
       <div className="relative max-w-4xl mx-auto">
 
         {/* Vertical Line */}
-        <div className="absolute left-1/2 top-0 w-[2px] h-full bg-red-500/30"></div>
+        <div className="absolute left-4 md:left-1/2 top-0 w-[2px] h-full bg-red-500/30"></div>
 
         {experiences.map((exp, index) => (
           <motion.div
@@ -58,12 +58,14 @@ function Experience() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             className={`mb-12 flex ${
-              index % 2 === 0 ? "justify-start" : "justify-end"
-            }`}
+  index % 2 === 0
+    ? "justify-start"
+    : "justify-start md:justify-end"
+}`}
           >
 
             {/* Card */}
-            <div className="w-[45%] p-6 rounded-xl border border-gray-700 bg-black/40 backdrop-blur-md relative hover:scale-105 transition duration-300">
+            <div className="w-full md:w-[45%] ml-10 md:ml-0 p-6 rounded-xl border border-gray-700 bg-black/40 backdrop-blur-md relative hover:scale-105 transition duration-300">
 
               {/* Glow Border */}
               <div className="absolute inset-0 rounded-xl border border-red-500 opacity-20 animate-pulse"></div>

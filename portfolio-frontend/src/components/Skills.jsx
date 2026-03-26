@@ -24,7 +24,12 @@ function Skills() {
     { name: "MySQL", icon: <SiMysql /> },
     { name: "MongoDB", icon: <SiMongodb /> },
     { name: "Git", icon: <FaGit /> },
-    { name: "Postman", icon: <SiPostman /> }
+    { name: "Postman", icon: <SiPostman /> },
+    { name: "Problem Solving", icon: <FaJava /> },
+    { name: "AI/ML", icon: <FaPython /> },
+    { name: "UI/UX Design", icon: <FaCss3Alt /> },
+    { name: "AI Automation", icon: <FaPython /> }
+
   ];
 
   return (

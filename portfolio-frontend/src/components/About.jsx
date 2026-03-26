@@ -64,7 +64,7 @@ function About() {
   initial={{ opacity: 0, x: 60 }}
   whileInView={{ opacity: 1, x: 0 }}
   transition={{ duration: 0.8 }}
-  className="hidden md:flex flex-1 justify-center z-10"
+  className="w-[260px] md:w-[350px] h-[360px] md:h-[450px] object-cover"
 >
   <motion.div
     animate={{ y: [0, -15, 0] }}

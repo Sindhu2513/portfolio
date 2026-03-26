@@ -87,7 +87,7 @@ function Hero() {
           initial={{ opacity: 0, x: 80 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
-          className="hidden md:flex flex-1 justify-center z-10"
+          className="flex flex-1 justify-center z-10 mt-10 md:mt-0"
         >
           <motion.div
             animate={{ y: [0, -15, 0] }}

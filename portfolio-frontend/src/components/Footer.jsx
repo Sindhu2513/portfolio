@@ -34,14 +34,16 @@ function Footer() {
       </div>
 
       
-      <a
-        href="#"
-        className="fixed bottom-5 right-5 p-3 bg-red-500 rounded-full hover:scale-110 transition" 
-        
+      <button
+        onClick={() =>
+          window.scrollTo({ top: 0, behavior: "smooth" })
+        }
+        className="fixed bottom-6 right-6 px-4 py-2 rounded-full 
+        bg-white/10 backdrop-blur-md border border-white/20 
+        text-sm hover:bg-white hover:text-black transition z-50"
       >
-        Back to Top
-        ↑
-      </a>
+        ↑ Back to top
+      </button>
 
     </footer>
   );

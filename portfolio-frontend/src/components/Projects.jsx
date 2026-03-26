@@ -117,6 +117,47 @@ function Projects() {
         <h2 className="text-4xl font-bold text-center mb-12">
           My <span className="text-red-500">Projects</span>
         </h2>
+        {/* 📱 MOBILE VIEW (STACK CARDS) */}
+<div className="md:hidden flex flex-col gap-6">
+  {projects.map((p, index) => (
+    <div
+      key={index}
+      className="p-5 border border-gray-700 rounded-xl bg-black/40 backdrop-blur-md"
+    >
+      <h3 className="text-lg font-bold mb-2">{p.title}</h3>
+
+      <p className="text-gray-400 text-sm mb-3">
+        {p.description}
+      </p>
+
+      <div className="flex flex-wrap gap-2 mb-4">
+        {p.tech.map((t, i) => (
+          <span key={i} className="text-xs border px-2 py-1 rounded">
+            {t}
+          </span>
+        ))}
+      </div>
+
+      <div className="flex gap-3">
+        <a
+          href={p.live}
+          target="_blank"
+          className="flex-1 text-center text-xs px-3 py-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded"
+        >
+          Live Demo
+        </a>
+
+        <a
+          href={p.code}
+          target="_blank"
+          className="flex-1 text-center text-xs px-3 py-2 border rounded hover:bg-white hover:text-black"
+        >
+          View Code
+        </a>
+      </div>
+    </div>
+  ))}
+</div>
 
         {/* 🔥 AUTO SLIDER */}
         <motion.div
@@ -124,7 +165,7 @@ function Projects() {
           animate={{ x: ["0%", "-100%"] }}
           transition={{
             repeat: Infinity,
-            duration: 20,
+            duration: 12,
             ease: "linear"
           }}
         >

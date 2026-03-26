@@ -200,3 +200,15 @@
     border-right-color: var(--border);
   }
 }
+/* FIX RIGHT SIDE CUT IN MOBILE */
+html, body {
+  overflow-x: hidden;
+  section {
+  width: 100%;
+  max-width: 100%;
+}
+.hero, .about {
+  width: 100%;
+  overflow-x: hidden;
+}
+}
