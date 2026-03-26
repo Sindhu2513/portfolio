@@ -161,7 +161,7 @@ function Projects() {
 
         {/* 🔥 AUTO SLIDER */}
         <motion.div
-          className="flex gap-8 "
+          className="hidden md:flex gap-8"
           animate={{ x: ["0%", "-100%"] }}
           transition={{
             repeat: Infinity,

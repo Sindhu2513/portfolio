@@ -11,7 +11,7 @@ function Hero() {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center px-10">
+    <section id="home" className="min-h-screen flex items-start md:items-center pt-24 md:pt-0 px-6 md:px-10">
 
       {/* ✅ SAME CONTAINER AS ABOUT */}
       <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">

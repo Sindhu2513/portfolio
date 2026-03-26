@@ -39,7 +39,7 @@ function Experience() {
 ];
 
   return (
-    <section id="experience" className="p-10 min-h-screen">
+    <section id="experience" className="p-10 pt-24 md:pt-10 min-h-screen relative z-10">
 
       {/* Heading */}
       <h2 className="text-4xl font-bold text-center mb-16">

@@ -38,7 +38,7 @@ function Footer() {
         onClick={() =>
           window.scrollTo({ top: 0, behavior: "smooth" })
         }
-        className="fixed bottom-6 right-6 px-4 py-2 rounded-full 
+        className="fixed bottom-20 right-4 md:bottom-6 md:right-6 px-4 py-2 rounded-full 
         bg-white/10 backdrop-blur-md border border-white/20 
         text-sm hover:bg-white hover:text-black transition z-50"
       >
