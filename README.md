@@ -2,10 +2,13 @@
 
 A modern and responsive **Full Stack Developer Portfolio** showcasing my projects, skills, and experience with smooth animations and a clean UI.
 
-🔗 **Live Demo:** https://your-portfolio-link.vercel.app
+# 🌐 My Portfolio (Full Stack)
 
----
+🔗 Live Demo: https://sindhu2513-portfolio.vercel.app 
+🔗 Backend API: https://portfolio-4-3axu.onrender.com
 
+   ---
+  
 ## 🚀 Features
 
 - ⚡ Fully responsive design (Mobile + Desktop)
@@ -14,6 +17,11 @@ A modern and responsive **Full Stack Developer Portfolio** showcasing my project
 - 📂 Projects showcase with live demo & code links
 - 🧠 Skills section with icons
 - 📬 Contact section
+- Contact form (React + Spring Boot)
+- API integration using Axios
+- Full deployment (Vercel + Render)
+- CORS handling
+
 
 ---
 
