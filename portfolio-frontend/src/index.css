@@ -5,6 +5,7 @@
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+
 /* Gradient Animation */
 @keyframes gradientMove {
   0% { background-position: 0% 50%; }

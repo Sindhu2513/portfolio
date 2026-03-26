@@ -7,7 +7,7 @@ function Footer() {
         <div>
           <h2 className="text-xl font-bold mb-3">Sindhu</h2>
           <p className="text-gray-400">
-            Full Stack Developer building modern applications.
+            Full Stack Developer building modern  creative applications with React, Node.js, and MongoDB. Passionate about creating seamless user experiences and scalable solutions. Always eager to learn and collaborate on innovative projects.
           </p>
         </div>
 
@@ -30,8 +30,18 @@ function Footer() {
       </div>
 
       <div className="text-center text-gray-500 mt-10">
-        © 2026 Sindhu
+        © 2026 Sindhu | All rights reserved.
       </div>
+
+      
+      <a
+        href="#"
+        className="fixed bottom-5 right-5 p-3 bg-red-500 rounded-full hover:scale-110 transition" 
+        
+      >
+        Back to Top
+        ↑
+      </a>
 
     </footer>
   );
